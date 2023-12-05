@@ -12,14 +12,19 @@ To build the application, run the following command with maven:
 mvn clean compile package
 ```
 
+Optionally, fill `app.github.token` in `application.properties` with your GitHub token to avoid rate limits.
+
 ## Usage
 
 Run the application and go to `http://localhost:8080/offsets` to see the list of offsets.
 
 <img src="https://i.gyazo.com/0a8ee4cba3accf33999b060ee5f0d402.png">
 
-Add new repositories in JSON format to the list by adding them to the `repositories` folder. 
-The application will automatically read the offsets from the repositories and add them to the list. 
+Add new repositories to the list by adding them to the `repositories` folder. 
+
+The application will automatically read the offsets from the repositories and add them to the list.
+
+It manages offsets lists in JSON and INI format.
 
 <img src="https://i.gyazo.com/5e5622ae58e59a1f02e482d04ec6f887.png">
 
